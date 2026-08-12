@@ -1,0 +1,24 @@
+.env
+.env.local
+
+# Python caches and coverage
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.venv/
+venv/
+
+# Runtime output and temporary files
+logs/
+*.log
+tmp/
+temp/
+work/
+data/uploads/
+
+# Local backups
+*.bak-*

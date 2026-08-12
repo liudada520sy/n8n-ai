@@ -1,0 +1,10 @@
+{
+  "python.defaultInterpreterPath": "E:\\conda_envs\\n8n-ai\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "python.envFile": "${workspaceFolder}\\.env.local",
+  "files.encoding": "utf8",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  }
+}

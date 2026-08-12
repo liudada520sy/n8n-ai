@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "1. 第三步 Mock 文档比对",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}\\document_comparator.py",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}\\.env.local",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "2. 启动飞书 FastAPI 中间件",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "app:app",
+        "--app-dir",
+        "${workspaceFolder}\\feishu-middleware",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8080"
+      ],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}\\.env.local",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "3. 第四步完整分析流水线",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}\\report_pipeline.py",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}\\.env.local",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
